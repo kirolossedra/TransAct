@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:transact;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DATABASE_TO_LOWER=TRUE
+    username: sa
+    password:
+  flyway:
+    enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+transact:
+  loans:
+    review-period-days: 3
